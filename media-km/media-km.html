@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="media-km.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Km Rodados</title>
+</head>
+
+<body onload="carregar()">
+
+    <section class="container">
+        <div class="barra-topo"></div>
+        <h3>Média KM por Litro</h3>
+        
+        <div class="dados">
+                <label for="kmRodado">Km Rodados: </label>
+                <input type="number" name="kmRodado" id="kmRodado">
+
+                <label for="litrosAbastecido">Litros Abastecidos: </label>
+                <input type="number" name="litrosAbastecido" id="litrosAbastecido">
+        </div>
+        
+        <div class="container-botao">
+            <input type="button" value="calcular" id="calcular" onclick="calcular()" class="btn-calcular">
+            <input type="button" value="limpar" id="limpar" onclick="limpar()" class="btn-limpar">
+        </div>
+        <div class="resultado" id="res"></div>
+    </section>
+
+    <footer>
+        <p>2022©Gleidson Sousa</p>
+    </footer>
+
+
+    <script src="media-km.js"></script>
+</body>
+</html>

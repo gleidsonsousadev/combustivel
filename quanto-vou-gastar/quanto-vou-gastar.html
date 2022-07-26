@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quanto-vou-gastar.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Quanto vou Gastar</title>
+</head>
+
+<body onload="carregar()">
+
+    <section class="container">
+        <div class="barra-topo"></div>
+        <h3>Quanto vou gastar pra percorrer?</h3>
+        
+        <div class="dados">
+                <label for="percurso">Percurso (km): </label>
+                <input type="number" name="percurso" id="percurso">
+
+                <label for="consumo">Consumo do veículo (km/l): </label>
+                <input type="number" name="consumo" id="consumo">
+
+                <label for="precoCombustivel">Preço do combustível: </label>
+                <input type="number" name="precoCombustivel" id="precoCombustivel">
+        </div>
+        
+        <div class="container-botao">
+            <input type="button" value="calcular" id="calcular" onclick="calcular()" class="btn-calcular">
+            <input type="button" value="limpar" id="limpar" onclick="limpar()" class="btn-limpar">
+        </div>
+        <div class="resultado" id="res">Gasto Total</div>
+    </section>
+
+    <footer>
+        <p>2022©Gleidson Sousa</p>
+    </footer>
+
+
+    <script src="quanto-vou-gastar.js"></script>
+</body>
+</html>

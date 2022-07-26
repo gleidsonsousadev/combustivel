@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quantos-litros-vai-dar.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Quantos Litros</title>
+</head>
+
+<body onload="carregar()">
+
+    <section class="container">
+        <div class="barra-topo"></div>
+        <h3>Quantos litros dará?</h3>
+        
+        <div class="dados">
+                <label for="valorAbastecer">Valor a abastecer: </label>
+                <input type="number" name="valorAbastecer" id="valorAbastecer">
+
+                <label for="precoCombustivel">Preço do combustível: </label>
+                <input type="number" name="precoCombustivel" id="precoCombustivel">
+        </div>
+        
+        <div class="container-botao">
+            <input type="button" value="calcular" id="calcular" onclick="calcular()" class="btn-calcular">
+            <input type="button" value="limpar" id="limpar" onclick="limpar()" class="btn-limpar">
+        </div>
+        <div class="resultado" id="res">Total de litros</div>
+    </section>
+
+    <footer>
+        <p>2022©Gleidson Sousa</p>
+    </footer>
+
+
+    <script src="quantos-litros-vai-dar.js"></script>
+</body>
+</html>
