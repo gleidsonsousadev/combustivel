@@ -12,7 +12,7 @@ function calcular() {
     return alert('Preencha todos os dados!')
    }
 
-   resultado.innerHTML = `A média é de ${media.toFixed(2)} km/l!`
+   resultado.innerHTML = `A média é de&nbsp;<b>${media.toFixed(2)} km/l</b>`
 }
 
 function limpar() {

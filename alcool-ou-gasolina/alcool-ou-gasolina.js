@@ -7,8 +7,8 @@ function calcular() {
    let precoGasolina = document.querySelector('input#precoGasolina').value
    let calculoCombustivel = Number(precoAlcool) / Number(precoGasolina)
    let resultado = document.querySelector('div#res')
-   let resAlcool = 'Abasteça com Álcool'
-   let resGasolina = 'Abasteça com Gasolina'
+   let resAlcool = 'Abasteça com&nbsp;<b>Álcool</b>'
+   let resGasolina = 'Abasteça com&nbsp;<b>Gasolina</>'
 
    if (precoAlcool.length < 1 || precoGasolina.length < 1) {
     return alert('Preencha todos os dados!')

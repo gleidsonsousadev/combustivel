@@ -13,7 +13,7 @@ function calcular() {
     return alert('Preencha todos os dados!')
    }
 
-   resultado.innerHTML = `O gasto será de R$${gasto.toFixed(2)}!`
+   resultado.innerHTML = `O gasto será de&nbsp;<strong>R$ ${gasto.toFixed(2).replace('.', ',')} </strong>!`
 }
 
 function limpar() {

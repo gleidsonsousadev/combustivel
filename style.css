@@ -4,39 +4,51 @@
     margin: 0;
     padding: 0;
     font-family: 'IBM Plex Sans', sans-serif;
-    /* border: 1px solid black; */
 }
 
 body {
     background: rgb(234, 234, 234);
 }
 
+.barra-top {
+    background: #4484D1;
+    height: 10px;
+    width: 40vw;
+    margin: auto;
+    border-radius: 0 0 30px 30px;
+}
+
 .container-conteudo {
-    width: 1400px;
-    height: 600px;
-    background: #fff;
-    margin: 100px auto 10px;
+    max-width: 60vw;
+    min-width: 400px;
+    background: #f6f6f6;
+    margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    border-radius: 50px 50px 0 0;
 }
 
 .cabecalho {
-    padding: 75px 75px 20px ;
+    text-align: center;
+    padding: 45px 75px 20px ;
 }
 
 .cabecalho h1 {
     font-size: 48px;
+    color: rgb(83, 83, 83);
 }
 
 .cabecalho p {
     font-size: 24px;
+    font-weight: 200;
 }
 
 
 .menus {
+    display: flex;
     text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
-    width: 1300px;
-    height: 300px;
     padding: 20px;
 }
 
@@ -46,15 +58,52 @@ body {
     width: 80px;
 }
 
+.icone01 {
+    margin-bottom: 20px;
+}
+
 .calculadoras p {
-    font-size:30px;
+    font-size:18px;
+    height: 60px;
 }
 
 .calculadoras {
-    display: inline-block;
-    margin: 15px;
-    width: 250px;
+    background-color: #fff;
+    width: 200px;
     height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    margin: 10px;
+}
+
+.calculadoras:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    transition: 0.3s;
+    border-radius: 24px;
+}
+
+.calculadoras button {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #bebebe;
+    text-transform: uppercase;
+}
+
+.calculadoras button:hover {
+    background-color: #ffffff;
+    border: 1px solid #bebebe;
+    color: #136d4f;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+}
+
+iframe {
+    display: block;
+    width: 70vw;
+    height: 55vh;
+    margin-top: 50px;
 }
