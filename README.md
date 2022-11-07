@@ -1,4 +1,4 @@
-# Projeo Combustível
+# Projeto Combustível
 
 Projeto de várias calculadoras para calcular consumo de combustível.
 
